@@ -167,6 +167,10 @@ img.section-separator {
 	margin-bottom: calc(2 * var(--margin-section-regular));
 }
 
+section.section-separator-reverse-container {
+	display: flex;
+	justify-content: end;
+}
 /* ------------------------- section separator ends */
 
 /* Skill section   */
@@ -192,19 +196,18 @@ img.section-separator {
 
 	border-radius: calc(1.67 * var(--border-radius-regular));
 }
-/* radial-gradient(circle, rgba(208, 234, 232, 0.87) 50%), */
-/* linear-gradient(35deg,  rgba(72, 197, 180, 0.35) 15%, rgba(255, 255, 255, 1) 40%) */
+
 .skill-section .skill-items .skill img.skill-logo {
 	width: 62px;
 }
-.skill-section .skill-title {
+.skill-title {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 60px;
 }
 
-.skill-section .skill-title img.skill-icon {
+.skill-title img.skill-icon {
 	width: 24px;
 }
 .skill-section .skill-title h4 {
@@ -212,6 +215,96 @@ img.section-separator {
 }
 
 /* -------------------------- Skill section ends  */
+
+/* Project section starts */
+.project-section {
+	margin-bottom: var(--margin-elements-regular);
+}
+.project-section .projects {
+	display: flex;
+	gap: var(--margin-elements-regular);
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.project-section .projects .project-item-container {
+	position: relative;
+}
+.project-section .projects .project-item-container img.project-thumbnail {
+	width: 30.5rem;
+	height: 19.5rem;
+	position: absolute;
+	top: 60px;
+	left: 15px;
+}
+.project-section .projects .project-item {
+	border: 1px solid #02ebce;
+	border-radius: calc(1.67 * var(--border-radius-regular));
+	margin-top: calc(3 * var(--margin-elements-regular));
+	width: 25.5rem;
+	height: 14.5rem;
+	background: linear-gradient(
+			to top right,
+			/* white, fully opaque */ rgb(196 233 229) 0%,
+			/* semi-transparent */ rgba(2, 235, 206, 0) 100%
+		),
+		linear-gradient(
+			to top right,
+			/* white, fully opaque */ rgba(162, 243, 231, 1) 0%,
+			/* semi-transparent */ rgba(239, 239, 239, 1) 81%
+		);
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	padding: calc(2.67 * var(--margin-elements-regular));
+}
+
+.project-section .projects .project-item .unordered-list {
+	margin: calc(2 * var(--margin-elements-regular)) 0;
+}
+
+.project-section .projects .project-item .unordered-list ul {
+	list-style-type: disc;
+	line-height: 1;
+	margin-left: calc(1.5 * var(--margin-elements-regular));
+}
+.project-section .projects .project-item .unordered-list ul li {
+	color: rgba(0, 0, 0, 0.85);
+}
+.project-section .projects .project-item .unordered-list ul li::marker {
+	font-size: 1.5rem;
+}
+.project-section .projects .project-item .project-title {
+	font-size: 1.5rem;
+	color: var(--primary-color);
+	font-weight: 800;
+}
+.project-section .projects .project-item .technologies-used {
+	margin-top: calc(var(--margin-elements-regular) / 3);
+	display: flex;
+	justify-content: flex-start;
+	gap: var(--flex-gap-regular);
+}
+.project-section .projects .project-item .technologies-used .tech-item {
+	display: flex;
+	gap: calc(var(--margin-elements-regular) / 3);
+	align-items: center;
+}
+.project-section .projects .project-item .technologies-used .tech-item h5.tech-title {
+	font-weight: 400;
+}
+.project-section .projects .project-item .technologies-used .tech-item img {
+	width: 24px;
+}
+.project-section .projects .project-item button {
+	width: 100%;
+	background: var(--button-color);
+	border: 1px solid var(--button-color);
+	padding: var(--padding-regular);
+	color: #fff;
+	border-radius: var(--border-radius-regular);
+}
+/* -------------------------------- project section ends  */
 
 /* ----------- for screen with 1366 or less */
 @media (max-width: 1567px) {
