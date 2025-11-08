@@ -1,8 +1,230 @@
-/** Navbar section starts **/
-body{
-    background: red;
+/* --------------- global variable starts */
+:root {
+	--gutter-size: 128px;
+	--gutter-size-regular: 10vw;
+	--gutter-size-larger: 20vw;
+	--font-size-regular-smaller-screen: 16px;
+	--font-size-regular-larger-screen: 24px;
+	--margin-section-regular: 32px;
+	--flex-gap-elements: 7px;
+	--margin-elements-regular: 15px;
+	--flex-gap-regular: 15px;
+	--border-radius-regular: 15px;
+	--padding-regular: 15px;
+	--primary-color: #034c53;
+	--button-color: #e27126;
 }
-/** Navbar section ends **/
+/* --------------- global variable ends */
 
-/** Hero section starts **/
-/** Hero section ends **/
+html {
+	font-size: var(--font-size-regular-larger-screen);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Inter;
+}
+.gutter-size {
+	margin: 0px max(var(--gutter-size), 20vw);
+}
+/* Navbar section starts **/
+
+header nav ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: end;
+	gap: var(--flex-gap-regular);
+}
+/* --------------------Navbar section ends **/
+
+/* Hero section starts **/
+
+.gradient-group {
+	background: linear-gradient(
+		to bottom,
+
+		/* white, fully opaque */ rgba(208, 234, 232, 0.8) 0%,
+		/* semi-transparent */ rgba(219, 248, 244, 0.6) 59%,
+		rgba(205, 248, 242, 0.7) 81%,
+		rgba(255, 255, 255, 0.9) 94%
+	);
+}
+
+.gradient-group #hero-section {
+	display: flex;
+	justify-content: space-between;
+	margin-top: var(--margin-section-regular);
+}
+
+.gradient-group #hero-section .left-content {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.gradient-group #hero-section .left-content .left-group-1 {
+	margin-top: var(--margin-section-regular);
+}
+.gradient-group #hero-section .left-content .left-group-1 button.resume-btn {
+	background: var(--button-color);
+	border: 1px solid var(--button-color);
+	padding: var(--padding-regular);
+	border-radius: var(--border-radius-regular);
+	color: #fff;
+}
+.gradient-group #hero-section .left-content .left-group-1 h1 {
+	font-size: 2rem;
+	color: var(--primary-color);
+}
+.gradient-group #hero-section .left-content .left-group-1 h1 span.intro {
+	color: #000;
+}
+.gradient-group #hero-section .left-content .left-group-1 span.word-highlight {
+	color: var(--primary-color);
+}
+.gradient-group #hero-section .left-content .left-group-1 h6 {
+	font-size: 1rem;
+	color: var(--primary-color);
+	position: relative;
+	left: 36px;
+	width: fit-content;
+}
+.gradient-group #hero-section .left-content .left-group-1 h6::before {
+	content: '';
+	position: absolute;
+	width: 36px;
+	height: 2px;
+	left: -36px;
+	background: var(--primary-color);
+	top: 50%;
+}
+.gradient-group #hero-section .left-content .left-group-1 h6::after {
+	content: '';
+	position: absolute;
+	width: 36px;
+	height: 2px;
+	right: -36px;
+	background: var(--primary-color);
+	top: 50%;
+}
+.gradient-group #hero-section .left-content .left-group-1 h4 {
+	font-size: 1.25rem;
+	margin: calc(var(--margin-section-regular) * 0.6) 0 calc(var(--margin-section-regular) * 0.2) 0;
+}
+
+.gradient-group #hero-section .left-content h5 {
+	font-size: 0.9rem;
+}
+.gradient-group #hero-section .right-content {
+	width: 50%;
+	display: flex;
+	justify-content: end;
+}
+
+.gradient-group #hero-section .right-content img {
+	max-width: 18rem;
+}
+
+/* ---------------- About me */
+section.gradient-group section.my-info {
+	display: flex;
+	margin-top: var(--margin-section-regular);
+	background: #fff;
+	border: 1px solid #dbf8f4;
+	border-radius: var(--border-radius-regular);
+	padding: calc(2.5 * var(--padding-regular));
+}
+section.gradient-group section.my-info .profile-image img {
+	width: 164px;
+}
+
+section.gradient-group section.my-info .profile-detail .text-description h1.title {
+	font-size: 1.25rem;
+}
+section.gradient-group section.my-info .profile-detail .text-description p {
+	margin-top: var(--margin-section-regular);
+	font-size: 1rem;
+}
+section.gradient-group section.my-info .profile-detail .contact-logo {
+	margin-top: var(--margin-elements-regular);
+	display: flex;
+	justify-content: flex-end;
+}
+section.gradient-group section.my-info .profile-detail .contact-logo img {
+	width: 18px;
+	margin-right: calc(var(--margin-elements-regular) - 8px);
+}
+/* ---------------- About me ends*/
+
+/* --------------------------- Hero section ends **/
+/* section separator */
+
+img.section-separator {
+	width: 35%;
+	height: 40px;
+	margin-top: calc(2 * var(--margin-section-regular));
+	margin-bottom: calc(2 * var(--margin-section-regular));
+}
+
+/* ------------------------- section separator ends */
+
+/* Skill section   */
+
+.skill-section .skill-items {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: var(--margin-section-regular);
+	gap: 15px;
+	justify-content: center;
+}
+.skill-section .skill-items .skill {
+	width: 188px;
+	height: 160px;
+	border: 1px solid #7fd7cb;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: var(--flex-gap-elements);
+
+	background: linear-gradient(35deg, rgba(72, 197, 180, 0.45) 65%, rgba(255, 255, 255, 1) 98%);
+
+	border-radius: calc(1.67 * var(--border-radius-regular));
+}
+/* radial-gradient(circle, rgba(208, 234, 232, 0.87) 50%), */
+/* linear-gradient(35deg,  rgba(72, 197, 180, 0.35) 15%, rgba(255, 255, 255, 1) 40%) */
+.skill-section .skill-items .skill img.skill-logo {
+	width: 62px;
+}
+.skill-section .skill-title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
+}
+
+.skill-section .skill-title img.skill-icon {
+	width: 24px;
+}
+.skill-section .skill-title h4 {
+	font-size: 1.25rem;
+}
+
+/* -------------------------- Skill section ends  */
+
+/* ----------- for screen with 1366 or less */
+@media (max-width: 1567px) {
+	html {
+		font-size: var(--font-size-regular-smaller-screen);
+	}
+	header nav ul {
+		list-style-type: none;
+		display: flex;
+		justify-content: end;
+		gap: 15px;
+	}
+	.gutter-size {
+		margin: 0px max(var(--gutter-size), 10vw);
+	}
+}

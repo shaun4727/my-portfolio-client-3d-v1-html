@@ -1,33 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="./index.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Blog</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-    </header>
-    <section id="hero-section">
-        <div class="left-content">
-            <h5>HI THERE</h5>
-            <h1><span class="intro">I&#39;m</span>SHAUN HOSSAIN</h1>
-              <h6>FULL STACK DEVELOPER</h6>                     
-              <h4>BRINGING <span class="word-highlight">IMAGINATION</span> TO <span class="word-highlight"> LIFE </span></h4>    
-              <button type="button">Download Resume</button>
-        </div>
-        <div class="right-content">
-            <img src="./images/hero-thumbnail.png" />
-        </div>
-    </section>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio Website</title>
+		<link rel="stylesheet" href="./index.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<section class="gradient-group">
+			<header>
+				<nav class="gutter-size">
+					<ul>
+						<li>Home</li>
+						<li>About</li>
+						<li>Blog</li>
+						<li>Contact</li>
+					</ul>
+				</nav>
+			</header>
+
+			<section id="hero-section" class="gutter-size">
+				<div class="left-content">
+					<h5>HI THERE</h5>
+					<div class="left-group-1">
+						<h1><span class="intro">I&#39;m</span> SHAUN HOSSAIN</h1>
+						<h6>FULL STACK DEVELOPER</h6>
+						<h4>
+							BRINGING <span class="word-highlight">IMAGINATION</span> TO
+							<span class="word-highlight"> LIFE </span>
+						</h4>
+						<button type="button" class="resume-btn">Download Resume</button>
+					</div>
+				</div>
+				<div class="right-content">
+					<img src="./images/hero-thumbnail.png" />
+				</div>
+			</section>
+			<section class="my-info gutter-size">
+				<div class="profile-image">
+					<img src="./images/profile-img-group.png" alt="" />
+				</div>
+				<div class="profile-detail">
+					<div class="text-description">
+						<h1 class="title">ABOUT ME</h1>
+						<p>
+							I'm Shaun Hossain, a fullstack developer with 4 years of diverse experience. I'm expert in
+							JavaScript related framework/libraries such as Next JS, React JS, Vue JS, Nuxt JS, Express
+							JS, Node JS etc. I also know CSS related work with Bootstrap, Tailwind etc. and I'm familiar
+							with UI/UX. My passion lies in tackling diverse challenges and creating amazing product with
+							clean code that makes it scalable for future.
+						</p>
+					</div>
+					<div class="contact-logo">
+						<img src="./images/github-icon.png" alt="github-icon" />
+						<img src="./images/gmail-icon.png" alt="gmail-icon" />
+						<img src="./images/linkedIn-icon.png" alt="linkedIn-icon" />
+					</div>
+				</div>
+			</section>
+			<img src="./images/Section Separator.png" alt="section-separator" class="section-separator gutter-size" />
+		</section>
+
+		<section class="skill-section gutter-size">
+			<div class="skill-title">
+				<img src="./images/skill-icon.png" alt="" class="skill-icon" />
+				<h4>SKILLS I HAVE</h4>
+			</div>
+
+			<div class="skill-items">
+				<div class="skill">
+					<img src="./images/cib_next-js.png" alt="" class="skill-logo" />
+					<h5>NEXT JS</h5>
+				</div>
+
+				<div class="skill">
+					<img src="./images/devicon_vuejs.png" alt="" class="skill-logo" />
+					<h5>VUE JS</h5>
+				</div>
+				<div class="skill">
+					<img src="./images/skill-icons_bootstrap.png" alt="" class="skill-logo" />
+					<h5>BOOTSTRAP 5</h5>
+				</div>
+				<div class="skill">
+					<img src="./images/javascript.png" alt="" class="skill-logo" />
+					<h5>JAVASCRIPT</h5>
+				</div>
+				<div class="skill">
+					<img src="./images/logos_nodejs-icon.png" alt="" class="skill-logo" />
+					<h5>NODE JS</h5>
+				</div>
+				<div class="skill">
+					<img src="./images/skill-icons_mongodb.png" alt="" class="skill-logo" />
+					<h5>MONGODB</h5>
+				</div>
+				<div class="skill">
+					<img src="./images/redux-js.png" alt="" class="skill-logo" />
+					<h5>REDUX JS</h5>
+				</div>
+			</div>
+		</section>
+	</body>
 </html>
