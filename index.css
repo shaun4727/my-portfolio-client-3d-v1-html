@@ -140,7 +140,8 @@ section.gradient-group section.my-info .profile-image img {
 }
 
 section.gradient-group section.my-info .profile-detail .text-description h1.title {
-	font-size: 1.25rem;
+	font-size: 1.5rem;
+	font-weight: 800;
 }
 section.gradient-group section.my-info .profile-detail .text-description p {
 	margin-top: var(--margin-section-regular);
@@ -210,8 +211,9 @@ section.section-separator-reverse-container {
 .skill-title img.skill-icon {
 	width: 24px;
 }
-.skill-section .skill-title h4 {
-	font-size: 1.25rem;
+.skill-title h4 {
+	font-size: 1.5rem;
+	font-weight: 800;
 }
 
 /* -------------------------- Skill section ends  */
@@ -305,6 +307,62 @@ section.section-separator-reverse-container {
 	border-radius: var(--border-radius-regular);
 }
 /* -------------------------------- project section ends  */
+
+/* Contact Section  */
+
+section.contact-me {
+	background: red;
+	border: 1px solid red;
+	border-radius: var(--border-radius-regular);
+	padding: calc(2 * var(--padding-regular)) 70px;
+}
+
+section.contact-me .skill-title h4 {
+	color: white;
+}
+
+section.contact-me h4 {
+	color: white;
+	font-size: 1.5rem;
+	font-weight: 800;
+}
+
+section.contact-me ul {
+	list-style-type: none;
+	margin-top: 50px;
+}
+
+section.contact-me ul li {
+	font-size: 1rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	color: white;
+	gap: 10px;
+}
+
+section.contact-me ul li img {
+	width: 24px;
+	height: 24px;
+}
+
+section.contact-me .linked-in {
+	display: flex;
+	gap: var(--flex-gap-elements);
+}
+section.contact-me h5.email-address {
+	color: white;
+}
+section.contact-me .linked-in img.linkedin-icon {
+	width: 24px;
+}
+section.contact-me .linked-in p {
+	color: white;
+}
+section.contact-me .social-section {
+	margin-top: 50px;
+}
+/* -------------------------------- contact section ends  */
 
 /* ----------- for screen with 1366 or less */
 @media (max-width: 1567px) {
