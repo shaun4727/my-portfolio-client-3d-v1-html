@@ -311,10 +311,14 @@ section.section-separator-reverse-container {
 /* Contact Section  */
 
 section.contact-me {
-	background: red;
-	border: 1px solid red;
+	background: linear-gradient(to right, rgba(21, 9, 99, 1), rgba(48, 27, 179, 0.7));
 	border-radius: var(--border-radius-regular);
 	padding: calc(2 * var(--padding-regular)) 70px;
+}
+
+section.contact-me section.contact-body {
+	display: flex;
+	justify-content: space-between;
 }
 
 section.contact-me .skill-title h4 {
@@ -362,6 +366,65 @@ section.contact-me .linked-in p {
 section.contact-me .social-section {
 	margin-top: 50px;
 }
+
+section.contact-me section.contact-body .left-section {
+	flex-basis: 45%;
+}
+section.contact-me section.contact-body .right-section {
+	flex-basis: 45%;
+	display: flex;
+	justify-content: flex-end;
+}
+section.contact-me section.contact-body .right-section .right-contact-body {
+	background: white;
+	border: 1px solid white !important  ;
+	border-radius: var(--border-radius-regular);
+	padding: calc(2.34 * var(--padding-regular));
+	width: 95%;
+	height: 100%;
+	border: 1px solid;
+	box-sizing: border-box;
+}
+section.contact-me section.contact-body .right-section .right-contact-body .input-name-email {
+	position: relative;
+}
+section.contact-me section.contact-body .right-section .right-contact-body .input-name-email input::placeholder,
+section.contact-me section.contact-body .right-section .right-contact-body textarea::placeholder {
+	font-size: 0.85rem;
+}
+section.contact-me section.contact-body .right-section .right-contact-body .input-name-email img {
+	width: 24px;
+	position: absolute;
+	top: 10px;
+	left: 5px;
+}
+section.contact-me section.contact-body .right-section h5 {
+	font-size: 1.25rem;
+	text-align: center;
+	margin-bottom: var(--margin-elements-regular);
+}
+
+section.contact-me section.contact-body .right-section .right-contact-body input {
+	margin-bottom: calc(var(--margin-elements-regular) - 8px);
+}
+section.contact-me section.contact-body .right-section .right-contact-body input,
+section.contact-me section.contact-body .right-section .right-contact-body textarea {
+	padding: 10px 5px 10px 30px;
+}
+section.contact-me section.contact-body .right-section .right-contact-body input,
+section.contact-me section.contact-body .right-section .right-contact-body textarea {
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: var(--border-radius-regular);
+	font-size: 1rem;
+	resize: none; /* optional, prevents manual resizing */
+}
+
+section.contact-me section.contact-body .right-section .right-contact-body textarea {
+	min-height: 150px; /* adjust height instead of rows/cols */
+}
+
 /* -------------------------------- contact section ends  */
 
 /* ----------- for screen with 1366 or less */
